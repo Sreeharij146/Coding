@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Neuron background canvas -->
+    <canvas id="neuronCanvas"></canvas>
+    
+    <!-- Chat container -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Neural Chat</h1>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <!-- Sample messages -->
+            <div class="message received">
+                <div class="message-avatar">
+                    <div class="avatar">AI</div>
+                </div>
+                <div class="message-content">
+                    <div class="message-text">Hello! I'm your AI assistant. How can I help you today?</div>
+                    <div class="message-time">2:30 PM</div>
+                </div>
+            </div>
+            
+            <div class="message sent">
+                <div class="message-content">
+                    <div class="message-text">Hi there! I'm exploring this neural chat interface.</div>
+                    <div class="message-time">2:31 PM</div>
+                </div>
+                <div class="message-avatar">
+                    <div class="avatar user">You</div>
+                </div>
+            </div>
+            
+            <div class="message received">
+                <div class="message-avatar">
+                    <div class="avatar">AI</div>
+                </div>
+                <div class="message-content">
+                    <div class="message-text">Great! The background represents neural networks processing information. Feel free to ask me anything!</div>
+                    <div class="message-time">2:32 PM</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off">
+                <button id="sendButton" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
